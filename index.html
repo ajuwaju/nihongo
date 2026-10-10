@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'self'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="color-scheme" content="light dark">
+  <title>home · nihongo</title>
+  <link rel="stylesheet" href="css/fonts.css?v=20261011012439">
+  <link rel="stylesheet" href="css/style.css?v=20261011012439">
+  <link rel="stylesheet" href="theme.css?v=20261011012439">
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <a class="masthead-name" href="index.html"><span class="logo-mark" aria-hidden="true"></span><span class="sr">nihongo</span></a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">menu</button>
+    <nav class="masthead-nav" id="primary-nav" aria-label="Primary">
+      <a href="daily.html">daily</a><span aria-hidden="true">+</span>
+      <a href="index.html">desk</a><span aria-hidden="true">+</span>
+      <a href="articles.html">articles</a><span aria-hidden="true">+</span>
+      <a href="reading.html">reading</a><span aria-hidden="true">+</span>
+      <a href="kanji.html">kanji</a><span aria-hidden="true">+</span>
+      <a href="vocab.html">vocab</a><span aria-hidden="true">+</span>
+      <a href="grammar.html">grammar</a><span aria-hidden="true">+</span>
+      <a href="quiz.html">quizzes</a><span aria-hidden="true">+</span>
+      <a href="listening.html">listening</a><span aria-hidden="true">+</span>
+      <a href="notes.html">notes</a><span aria-hidden="true">+</span>
+      <a href="about.html">about</a><span aria-hidden="true">+</span>
+      <button id="furi-toggle" type="button" aria-pressed="true">ふりがな on</button><span aria-hidden="true">+</span>
+      <button id="theme-toggle" type="button" aria-pressed="false">light</button>
+    </nav>
+    <div class="sys" aria-hidden="true">sys_time<br><b id="sys-time">00:00:00</b><br><span id="sys-tz">UTC</span></div>
+    <div class="masthead-cta"><a class="btn primary small" href="daily.html">today</a></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Welcome">
+      <div class="hero-words">
+        <span class="rail" aria-hidden="true"></span>
+        <p class="type small" id="greet">こんにちは</p>
+        <h1 class="signature"><span id="who-name">nihongo</span><span class="no">/01</span></h1>
+        <p class="hero-tag"></p>
+        <p class="type" id="intro">every jlpt level from n5 to n1 in one system. kanji, words, grammar, articles, reading drills, listening tests, quizzes and a drawer of notes. progress is saved under your name.</p>
+        <div class="btn-row">
+          <a class="btn primary" href="daily.html">start today's session</a>
+          <a class="btn" href="about.html#plan">view the plan</a>
+        </div>
+        <p class="hand hand-note" id="streak-line">no streak yet. today is a good day to start one</p>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <span class="hud tl">&gt; rendering… 87%</span>
+        <span class="hud tr">//scn_01</span>
+        <span class="hud mr">x_35.1749<br>y_-86.7676<br>z_46.6827</span>
+        <span class="hud br">jlpt / n5 → n1</span>
+        <span class="blocks"><i></i><i></i><i></i><i></i></span>
+        <span class="cross a"></span><span class="cross b"></span>
+      </div>
+    </section>
+
+    <section class="band" aria-label="Principles">
+      <div><p class="k">/02 review first</p><p class="v">clear the due cards before anything new. the spacing decides what comes back.</p></div>
+      <div><p class="k">systems thinking</p><p class="v">kanji feed words, words feed grammar, grammar feeds reading.</p></div>
+      <div><p class="k">out loud</p><p class="v">read every passage aloud. listen before you look at the script.</p></div>
+      <div><p class="k">no fluff</p><p class="v">fifteen new cards a day, one grammar point, one text. every day.</p></div>
+    </section>
+
+    <section class="desk" aria-label="Today">
+      <div class="today-card" id="today">
+        <span class="tape right"></span>
+        <h2>/03 today</h2>
+        <p class="loading">opening the files</p>
+      </div>
+      <div class="desk-words">
+        <div class="index-card">
+          <span class="tape"></span>
+          <p class="type"><b>how the room works.</b> every page has level tabs n5 to n1. flashcards grade themselves into a schedule. articles open with furigana and word hints. reading drills run a clock. listening uses the voice on your own computer. anything worth keeping becomes a card in the notes drawer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="h-stats">
+      <h2 id="h-stats" class="type-head"><span class="num">/04</span><span>system status</span></h2>
+      <div class="stats" id="stats"></div>
+      <div class="ladder" id="ladder"></div>
+      <p class="status-line">all systems operational</p>
+    </section>
+
+    <section aria-labelledby="h-quick">
+      <h2 id="h-quick" class="type-head"><span class="num">/05</span><span>modules</span></h2>
+      <div class="quick" id="quick"></div>
+    </section>
+
+    <section aria-labelledby="h-plan">
+      <h2 id="h-plan" class="type-head"><span class="num">/06</span><span>the fast route, in short</span></h2>
+      <div class="sheet wide">
+        <ol class="plan">
+          <li><b>kana first, in a week.</b> hiragana then katakana until reading them is automatic. the about page has the tables.</li>
+          <li><b>every day, three small things.</b> clear the kanji and vocab reviews (ten minutes), open one grammar point and do its drill, read one article or passage out loud.</li>
+          <li><b>new cards, fifteen a day.</b> that pace alone covers n5 kanji in a week and n4 in a month. raise it when reviews feel light.</li>
+          <li><b>listen before you look.</b> in listening tests play the audio twice, answer, then reveal the script. dictate one line a day.</li>
+          <li><b>mock exam every sunday.</b> quizzes → mock exam, at your target level. a steady 80% means you are ready to move up.</li>
+          <li><b>write it down.</b> anything that trips you twice becomes a note in the drawer. read the drawer on the train.</li>
+        </ol>
+        <p class="type small mt14"><a href="about.html#plan">the full week-by-week plan →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <span>made by hand. password-locked, no trackers, nothing loaded from anyone else.</span>
+    <a href="about.html#privacy">how this site treats you</a>
+  </footer>
+  <div class="access" aria-hidden="true"><span>&gt; access granted_</span></div>
+  <script src="js/vault.js?v=20261011012439"></script>
+  <script src="js/store.js?v=20261011012439"></script>
+  <script src="js/app.js?v=20261011012439" defer></script>
+  <script src="js/adapt.js?v=20261011012439" defer></script>
+  <script src="js/home.js?v=20261011012439" defer></script>
+</body>
+</html>

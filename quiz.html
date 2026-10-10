@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'self'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="color-scheme" content="light dark">
+  <title>quizzes · nihongo</title>
+  <link rel="stylesheet" href="css/fonts.css?v=20261011012439">
+  <link rel="stylesheet" href="css/style.css?v=20261011012439">
+  <link rel="stylesheet" href="theme.css?v=20261011012439">
+</head>
+<body data-page="quiz">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <a class="masthead-name" href="index.html"><span class="logo-mark" aria-hidden="true"></span><span class="sr">nihongo</span></a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">menu</button>
+    <nav class="masthead-nav" id="primary-nav" aria-label="Primary">
+      <a href="daily.html">daily</a><span aria-hidden="true">+</span>
+      <a href="index.html">desk</a><span aria-hidden="true">+</span>
+      <a href="articles.html">articles</a><span aria-hidden="true">+</span>
+      <a href="reading.html">reading</a><span aria-hidden="true">+</span>
+      <a href="kanji.html">kanji</a><span aria-hidden="true">+</span>
+      <a href="vocab.html">vocab</a><span aria-hidden="true">+</span>
+      <a href="grammar.html">grammar</a><span aria-hidden="true">+</span>
+      <a href="quiz.html">quizzes</a><span aria-hidden="true">+</span>
+      <a href="listening.html">listening</a><span aria-hidden="true">+</span>
+      <a href="notes.html">notes</a><span aria-hidden="true">+</span>
+      <a href="about.html">about</a><span aria-hidden="true">+</span>
+      <button id="furi-toggle" type="button" aria-pressed="true">ふりがな on</button><span aria-hidden="true">+</span>
+      <button id="theme-toggle" type="button" aria-pressed="false">light</button>
+    </nav>
+    <div class="sys" aria-hidden="true">sys_time<br><b id="sys-time">00:00:00</b><br><span id="sys-tz">UTC</span></div>
+    <div class="masthead-cta"><a class="btn primary small" href="daily.html">today</a></div>
+  </header>
+
+  <main id="main">
+    <div class="page-head">
+      <div><h1 class="signature">quizzes<span class="jp-title">問題</span></h1>
+      <p class="type">build a quiz from any mix of kanji, vocabulary, grammar and reading, or sit a timed mock exam in the real section order. results stay in your history.</p></div>
+    </div>
+    <div id="setup"></div>
+    <div id="run" hidden></div>
+    <section id="history-wrap">
+      <h2 class="type-head"><span class="num">02</span><span>your history</span></h2>
+      <ul class="history" id="history"></ul>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <span>made by hand. password-locked, no trackers, nothing loaded from anyone else.</span>
+    <a href="about.html#privacy">how this site treats you</a>
+  </footer>
+  <div class="access" aria-hidden="true"><span>&gt; access granted_</span></div>
+  <script src="js/vault.js?v=20261011012439"></script>
+  <script src="js/store.js?v=20261011012439"></script>
+  <script src="js/app.js?v=20261011012439" defer></script>
+  <script src="js/adapt.js?v=20261011012439" defer></script>
+  <script src="js/quizgen.js?v=20261011012439" defer></script>
+  <script src="js/quiz.js?v=20261011012439" defer></script>
+</body>
+</html>

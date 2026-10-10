@@ -1,0 +1,73 @@
+/* ============================================================
+   THEME  ·  the one file you edit to make the site yours
+   ============================================================
+   two looks are built in:
+   - the dark cyber look (this file, the default)
+   - a quiet, light, apple-style look in preset-apple.css
+   to switch to the apple look, remove the comment marks around the
+   import on the next line so it reads   @import "preset-apple.css";
+   put the marks back to return to the dark look.                   */
+/* @import "preset-apple.css"; */
+/* ------------------------------------------------------------
+   change a value, save, reload. nothing else needs touching.
+   colours can be any css colour: #c6ff00, rgb(255,0,120), hotpink …
+   pictures must live in site/img/ (copy them there first).
+   the site never loads pictures from other websites.               */
+
+:root {
+  /* ---- the primary colour (buttons, numbers, highlights, stripes) ---- */
+  --accent: #c6ff00;
+  --accent-ink: #0a0a0a;        /* text written on top of the accent */
+
+  /* ---- the dark look (default) ---- */
+  --bg: #0a0a0a;                /* page background */
+  --panel: #111111;             /* boxes and cards */
+  --panel-2: #171717;           /* hover / inner boxes */
+  --line: #2a2a2a;              /* borders and grid lines */
+  --fg: #f2f2f2;                /* main text */
+  --muted: #8d8d8d;             /* small grey labels */
+
+  /* ---- the light look (when you press "light" in the menu) ---- */
+  --light-bg: #f4f4f1;
+  --light-panel: #ffffff;
+  --light-panel-2: #ececea;
+  --light-line: #d3d3cf;
+  --light-fg: #0a0a0a;
+  --light-muted: #6b6b6b;
+
+  /* ---- fonts ----
+     the site ships DM Sans (bold, geometric) and uses your computer's
+     monospace. if you add Eiko files to site/fonts/, you can write
+     "Eiko" here instead of "DM Sans".                               */
+  --font-display: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Courier New", monospace;
+
+  /* ---- pictures ----
+     put files in site/img/ and name them here. leave a slot as
+     none if you have no picture for it: the site draws a pattern.    */
+  --img-hero: url("img/hero.jpg");            /* big picture on the home page */
+  --img-kanji: url("img/kanji.jpg");          /* the eight cards on the home page */
+  --img-vocab: url("img/vocab.jpg");
+  --img-grammar: url("img/grammar.jpg");
+  --img-articles: url("img/articles.jpg");
+  --img-reading: url("img/reading.jpg");
+  --img-listening: url("img/listening.jpg");
+  --img-quiz: url("img/quiz.jpg");
+  --img-notes: url("img/notes.jpg");
+  --img-gate: none;                           /* behind the password box, e.g. url("img/gate.jpg") */
+
+  /* ---- shape and material ----
+     --radius 0 keeps the sharp brutalist edges; 12px to 16px gives the
+     soft, continuous corners of an apple interface.                   */
+  --radius: 0px;
+  --radius-sm: 0px;
+  --display-case: uppercase;    /* uppercase for the brutalist look, none for sentence case */
+  --glass: 72%;                 /* how opaque the floating bars are (0 to 100) */
+  --blur: 18px;                 /* how much they blur what scrolls beneath them */
+
+  /* ---- words ---- */
+  --site-name: "NIHONGO";                     /* shown in the top-left box */
+  --tagline-1: "THE FUTURE ISN'T FLUENT.";    /* two lines under the big title */
+  --tagline-2: "IT'S SYSTEMATIC.";
+}

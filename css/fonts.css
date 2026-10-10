@@ -1,0 +1,38 @@
+/* Local fonts only. Every file lives in site/fonts/; nothing is loaded from another origin.
+   DM Sans (SIL Open Font License) ships with the site and is the default display and body face.
+   Eiko (Pangram Pangram, paid) is optional: drop Eiko-Thin / Eiko-ExtraLight / Eiko-Light / Eiko-Medium
+   files into site/fonts/ (or run python3 scripts/add-fonts.py <folder>) and write "Eiko" in theme.css.
+   Japanese text always comes from the system's own Japanese fonts. */
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Variable.ttf") format("truetype");
+  font-weight: 100 1000; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Eiko";
+  src: url("../fonts/Eiko-Thin.woff2") format("woff2"), url("../fonts/Eiko-Thin.otf") format("opentype");
+  font-weight: 100; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Eiko";
+  src: url("../fonts/Eiko-ExtraLight.woff2") format("woff2"), url("../fonts/Eiko-ExtraLight.otf") format("opentype");
+  font-weight: 200; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Eiko";
+  src: url("../fonts/Eiko-Light.woff2") format("woff2"), url("../fonts/Eiko-Light.otf") format("opentype");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Eiko";
+  src: url("../fonts/Eiko-Medium.woff2") format("woff2"), url("../fonts/Eiko-Medium.otf") format("opentype");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+
+:root {
+  --jp-serif: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;
+  --jp-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans CJK JP", "Meiryo", sans-serif;
+  --font-jp: var(--jp-sans);
+  --font-jp-sans: var(--jp-sans);
+}

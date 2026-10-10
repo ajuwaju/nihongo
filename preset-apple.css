@@ -1,0 +1,30 @@
+/* the apple-style look: light, quiet, soft corners, system fonts, blue accent.
+   switched on from theme.css (see the note at its top). edit values here freely.
+   the doubled selector keeps these values in charge whatever order the files load in. */
+:root:root {
+  --accent: #0a84ff;
+  --accent-ink: #ffffff;
+  --bg: #f5f5f7;
+  --panel: #ffffff;
+  --panel-2: #f0f0f3;
+  --line: #e2e2e7;
+  --fg: #1d1d1f;
+  --muted: #86868b;
+  --light-bg: #000000;
+  --light-panel: #1c1c1e;
+  --light-panel-2: #2c2c2e;
+  --light-line: #3a3a3c;
+  --light-fg: #f5f5f7;
+  --light-muted: #98989d;
+  --font-display: -apple-system, "SF Pro Display", "Helvetica Neue", "DM Sans", sans-serif;
+  --font-body: -apple-system, "SF Pro Text", "Helvetica Neue", "DM Sans", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --display-case: none;
+  --glass: 70%;
+  --blur: 24px;
+  --site-name: "nihongo";
+  --tagline-1: "Every level.";
+  --tagline-2: "One quiet system.";
+}
